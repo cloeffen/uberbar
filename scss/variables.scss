@@ -1,0 +1,18 @@
+// Import pywal colors
+@import '/Users/Cas/.cache/wal/colors.scss';
+
+:root {
+  // Dimensions
+	--width: 100vw;
+	--height: 50px;
+
+  // Colors
+	--bg: #{$background};
+	--fg: #{$foreground};
+  --active: #{foreground};
+  --notactive: #{$color5};
+
+  // Fonts	
+	--font: 'Ubuntu Mono', 'Inconsolata for Powerline', 'Space Mono for Powerline', 'IBM Plex Mono';
+	--fontsize: 15px;
+}

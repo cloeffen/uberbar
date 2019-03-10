@@ -1,0 +1,76 @@
+:root {
+  --width: 100vw;
+  --height: 50px;
+  --bg: #121115;
+  --fg: #afb5b8;
+  --active: foreground;
+  --notactive: #8A6C62;
+  --font: 'Ubuntu Mono', 'Inconsolata for Powerline', 'Space Mono for Powerline', 'IBM Plex Mono';
+  --fontsize: 15px;
+}
+
+div#__uebersicht {
+  background-color: var(--bg);
+  bottom: 0;
+  color: var(--fg);
+  font: var(--fontsize) var(--font);
+  height: var(--height);
+  position: absolute;
+}
+
+.screen {
+  width: var(--width);
+}
+
+.screen div {
+  line-height: var(--height);
+  position: absolute;
+}
+
+.kwmmode {
+  font-size: 26px;
+  left: 50px;
+}
+
+.battery {
+  right: 280px;
+}
+
+.spotify {
+  left: 270px;
+}
+
+.toggl {
+  right: 400px;
+}
+
+.date {
+  right: 50px;
+}
+
+.notify {
+  animation: fadeIn 10000ms ease-in-out 0 forwards;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+* {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  color: var(--fg);
+}
+
+.not-active {
+  color: var(--notactive);
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  5%, 95% {
+    opacity: 1;
+  }
+}

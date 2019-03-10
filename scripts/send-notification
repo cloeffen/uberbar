@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if ps ax | grep -v grep | grep Uebersicht > /dev/null; then
+echo "$(date +%H:%M:%S)" - "$1" > /tmp/notification &&
+osascript <<EOD
+  tell application "Uebersicht"
+  	refresh widget id "Uberbar-notification-jsx"
+  end tell
+EOD
+fi
