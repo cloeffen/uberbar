@@ -1,8 +1,15 @@
 # Display spaces using in a bar that accepts stdout
 chunkc=/usr/local/bin/chunkc
+yabai=/usr/local/bin/yabai
+jq=/usr/local/bin/jq
 
 # get active and previous space
-active=$($chunkc tiling::query -d id)
-total=$($chunkc tiling::query --desktops-for-monitor 1 | tail -c 1)
+# mode=$($chunkc tiling::query --desktop mode)
+# total=$($chunkc tiling::query --desktops-for-monitor 1 | tail -c 1)
+# active=$($chunkc tiling::query -d id)
 
-echo "$($chunkc tiling::query --desktop mode)@$total@$active"
+mode=$($yabai -m query --spaces --space | $jq '.type')
+total=$($yabai -m query --spaces | $jq '. | length')
+active=$($yabai -m query --spaces --space | $jq '.index')
+
+echo "$mode@$total@$active"

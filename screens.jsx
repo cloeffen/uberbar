@@ -11,7 +11,7 @@ export const render = ( output ) => {
 }
 
 export const updateState = (event, previousState) => {
-	if (!event.output) return "<small style='color: red;'>chunkwm is not running</small>"
+	if (!event.output) return "<small style='color: red;'>yabai is not running</small>"
 
   let values = event.output.split('@')
 

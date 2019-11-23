@@ -1,5 +1,4 @@
-export const command = "osascript -e 'if application \"Spotify\" is running then tell application \"Spotify\" to if player state is playing then artist of current track & \" - \" & name of current track'"
-
+export const command = `osascript -e 'if application "Spotify" is running then tell application "Spotify" to if player state is playing then artist of current track & " - " & name of current track'`
 
 export const refreshFrequency = 3000
 

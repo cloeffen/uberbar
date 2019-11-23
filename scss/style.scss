@@ -1,7 +1,7 @@
 // Import Colors
-@import 'variables.scss';
+@import 'variables';
 
-div#__uebersicht {
+div#uebersicht {
   background-color: var(--bg);
   bottom: 0;
   color: var(--fg);

@@ -1,15 +1,15 @@
 :root {
   --width: 100vw;
   --height: 50px;
-  --bg: #121115;
-  --fg: #afb5b8;
+  --bg: #0A151C;
+  --fg: #d6d7da;
   --active: foreground;
-  --notactive: #8A6C62;
+  --notactive: #F8E4A8;
   --font: 'Ubuntu Mono', 'Inconsolata for Powerline', 'Space Mono for Powerline', 'IBM Plex Mono';
   --fontsize: 15px;
 }
 
-div#__uebersicht {
+div#uebersicht {
   background-color: var(--bg);
   bottom: 0;
   color: var(--fg);
